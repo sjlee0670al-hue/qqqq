@@ -13,8 +13,16 @@
     <button> 테스트 </button>
     <script>
         console.log("Hello")
-        console.log("202258014")
-        console.log("안승진")
+        console.log("...") //학번
+        console.log("...") //이름
+
+        var btnTest = document.getElementById("btn-test")
+        var inputName = document.getElentById("input -name")
+
+        btnTest.addEventlistener('click',()=> {
+            //클릭하면 실행
+            console.log(" "+inputName.Value + "님")
+        })
     </script>
     
 </body>
