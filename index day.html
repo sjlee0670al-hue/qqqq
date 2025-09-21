@@ -6,22 +6,23 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>
-        Hello Day01 Page
-    </h1>
-    <input/>
-    <button> 테스트 </button>
+    <h1>Hello Day01 Page</h1>
+
+    <input id="input-name"/>
+    <button id="btn-test"> 테스트버튼 </button>
+
+
     <script>
         console.log("Hello")
-        console.log("...") //학번
-        console.log("...") //이름
+        console.log("202258014") //학번
+        console.log("안승진") //이름
 
         var btnTest = document.getElementById("btn-test")
-        var inputName = document.getElentById("input -name")
+        var inputName = document.getElementById("input-name")
 
-        btnTest.addEventlistener('click',()=> {
+        btnTest.addEventListener('click',()=> {
             //클릭하면 실행
-            console.log(" "+inputName.Value + "님")
+            console.log("안녕하세요 " + inputName.value + "님")
         })
     </script>
     
